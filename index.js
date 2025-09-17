@@ -1,11 +1,12 @@
 const express = require('express')
-require('dotenv').config()
 const cors = require('cors')
 const http = require('http')
 const { productRouter } = require('./routes/product.route')
 const { cartRouter } = require('./routes/cart.route.js')
 const { userRoute } = require('./routes/user.route.js')
 const { connectDb } = require('./server.js')
+
+
 
 
 connectDb()
